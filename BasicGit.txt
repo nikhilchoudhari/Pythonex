@@ -1,0 +1,36 @@
+To initialize a git repository in the root of the folder, run the git init command:  - git init
+
+Go ahead and add a new file to the project, using any text editor you like or running a touch command. - touch Tundra.txt
+
+After creating the new file, you can use the git status command to see which files git knows exist.What this basically says is, "Hey, we noticed you created a new file called mnelson.txt, but unless you use the 'git add' command we aren't going to do anything with it." - git status
+
+So, how do you tell git which files to put into a commit? This is where the staging environment or index come in. To add a file to a commit, you first need to add it to the staging environment. To do this, you can use the git add - git add Tundra.txt
+
+run git status command to check changes. To reiterate, the file has not yet been added to a commit, but it's about to be.
+
+Once you've used the git add command to add all the files you want to the staging environment, you can then tell git to package them into a commit using the git commit command. - git commit -m "Your message about commit"
+
+
+
+
+Let's say you are on the master branch and want to create a new branch to develop your web page. Here's what you'll do: Run git checkout -b <my branch name>. - git checkout -b Greenland
+
+After running the above command, you can use the git branch command to confirm that your branch was created: - git branch 
+
+to change the brach use command  git checkout. The branch name with the asterisk next to it indicates which branch you're pointed to at that given time.- git checkout master
+
+Now, if you switch back to the master branch and make some more commits, your new branch won't see any of those changes until you merge those changes onto your new branch.
+
+
+Pusing file from local drive to github repo
+============================================
+git remote add origin (link of git hub)
+git remote -v (to check link)
+git push -u origin master
+
+
+
+
+
+
+
